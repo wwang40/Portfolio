@@ -1,36 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>William Wang | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="script" href="portfolio.js">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="background-color: whitesmoke;">
-    <h1>
-        <name id="name">William Wang</name>
-        <br id="hotbar-break">
-        <div id="links">
-        <a class="hotbar" href="https://github.com/wwang40">About</a>
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-        <a class="hotbar" href="https://github.com/wwang40">Github</a>
-        </div>
-    </h1>
-    <div id="aboutme">
-        <img id="headshot" src="headshot.jpg"></img>
-     <p style="color: rgb(12, 33, 51);">Hi, my name is William Wang. 
-        I am a current freshman at Cornell University, pursuing a degree in computer science and a possible minor. 
-        My favorite hobbies are cooking, video games, rowing & music. 
-        I love baking and frying for cooking but do it rarely due to lack of time to prep. 
-        Most of my free time I am playing video games, listening to music and watching tv shows.
-        Some of my favorite tv shows are Bojack Horseman, Arcane, Dark.  
-        I usually play valorant but I have enjoyed many single player games such as Hades, Hollow Knight and Elden Ring. 
-        My favorite music genres are hiphop and R&B. Some of my favorite artists include JID,  Tyler the Creator, JPEGMAFIA, Ari Lennox, SZA, Sudan Archives, Kendrick and much more. 
-        Also, I am currently learning how to play the trumpet.
-        Sometimes instead of wasting away my time, I try to develope my CS skills.
-        Currently, I'm trying to learn the basics of web development, but hope to gain skils
-        in machine learning and UX design.<p>
+  <header class="bg-white shadow-md">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row md:justify-between md:items-center">
+      <div>
+        <h1 class="text-3xl font-bold">William Wang</h1>
+        <p class="text-gray-600">Cornell University | Computer Science</p>
+      </div>
+      <div class="mt-4 md:mt-0 flex space-x-4">
+        <a href="mailto:ww548@cornell.edu" class="text-blue-600 hover:underline">Email</a>
+        <a href="https://linkedin.com/in/willam-wang-a76" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="https://github.com/wwang40" class="text-blue-600 hover:underline">GitHub</a>
+      </div>
     </div>
+  </header>
+
+
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="leading-relaxed text-gray-700">
+      Hi, I’m William Wang, a sophomore at <strong>Cornell University</strong> pursuing a B.A. in 
+      <strong>Computer Science</strong>. I’m passionate about building technology that bridges creativity and 
+      functionality, with interests in <strong>web development, machine learning, and UX design</strong>.
+    </p>
+    <p class="mt-4 text-gray-700">
+      Outside of academics, I enjoy cooking, rowing, music, and gaming. I play trumpet in the Big Red Marching Band, 
+      row and cox competitively, and explore creativity through video games and baking.
+    </p>
+  </section>
+
+
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-8">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold">Virtual Pet Chrome Extension (POOFS)</h3>
+          <p class="mt-2 text-gray-700">
+            Chrome extension with draggable AI-driven pets. Features Firebase authentication, Firestore persistence, 
+            and ChatGPT-powered conversations.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold">Weird Food Pairing Board</h3>
+          <p class="mt-2 text-gray-700">
+            Full-stack app for sharing unusual food pairings, with Supabase authentication and a dynamic social feed.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold">Graphics Engine</h3>
+          <p class="mt-2 text-gray-700">
+            Built a Python graphics engine for 2D/3D rendering with optimized matrix transformations, lighting, and shading.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+    <ul class="space-y-6">
+      <li>
+        <h3 class="font-bold">Teaching Assistant | BPA at P.S. 163 NYC</h3>
+        <p class="text-gray-700">Led STEM activities and tailored lesson plans for 20+ students, improving learning outcomes.</p>
+      </li>
+      <li>
+        <h3 class="font-bold">Canvasser | Meridian Strategies NYC</h3>
+        <p class="text-gray-700">Engaged 200+ residents to gather voter data and increase election awareness.</p>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-4">Extracurriculars</h2>
+      <ul class="space-y-6">
+        <li><strong>Web Dev Club</strong> – Developer contributing to AI-powered career tools.</li>
+        <li><strong>Big Red Marching Band</strong> – Trumpet player at campus events and concerts.</li>
+        <li><strong>Rowing & Coxswain</strong> – Leadership in navigation, crew coordination, and competitive rowing.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-4">Technical Skills</h2>
+    <p class="text-gray-700">
+      <strong>Languages:</strong> Java, Python, JavaScript, TypeScript, HTML/CSS, SQL<br/>
+      <strong>Frameworks:</strong> React, Node.js<br/>
+      <strong>Tools:</strong> Git, VS Code, IntelliJ, Figma, JUnit, Google Cloud Platform
+    </p>
+  </section>
+
+
+  <footer class="bg-white shadow-inner mt-12">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-center text-gray-600">
+      © 2025 William Wang — Built with ❤️ and TailwindCSS
+    </div>
+  </footer>
 </body>
 </html>
